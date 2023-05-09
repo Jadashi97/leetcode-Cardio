@@ -16,17 +16,17 @@
 
 // Q2. 1480. Running Sum of 1d Array
 var runningTotal = (nums)=>{
-  let total = " ";
-  result = [ ];
+  let total = 0;
+  let result = [ ];
 
   for(let i = 0; i < nums.length; i++){
     total = total + nums[i];
-    resullt = push(total);
+    result.push(total);
   }
   return result;
 }
 
-runningTotal([1,2,3,4]);
+// console.log(runningTotal([1,2,3,4]));
 
 // Q3. 724. Find Pivot Index
 let totalSum = 0;
@@ -49,3 +49,5 @@ let pivotIndex = (nums) => {
 return -1
 
 }
+
+console.log(pivotIndex([2,1,-1]));
