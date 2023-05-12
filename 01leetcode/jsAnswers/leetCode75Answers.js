@@ -88,5 +88,18 @@ console.log(isIsomorphic("foo", "bar"));
 392. Is Subsequence
 - understand what the  subsequence is and what exactly is needed 
 */
+function isSubsequence(s, t) {
+  let sPointer = 0;
+  let tPointer = 0;
+
+  while (sPointer < s.length && tPointer < t.length) {
+    if (s[sPointer] === t[tPointer]) {
+      sPointer++;
+    }
+    tPointer++;
+  }
+
+  return sPointer === s.length;
+}
 
 
